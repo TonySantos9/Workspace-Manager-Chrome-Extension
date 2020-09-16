@@ -129,7 +129,7 @@ function dumpAllTabs(query) {
             $('#listingtitle').append('<b>Workspace name of current tabs: <i>' + localStorage.getItem(tabs[0].windowId) + '</i></b>')
             $('#workspace').val(localStorage.getItem(tabs[0].windowId))
           } else {
-            $('#listingtitle').append('<b style="font-size:12px; ">TABS OPEN IN CURRENT WINDOW:</b>')
+            $('#listingtitle').append('<b style="font-size:12px;" class="lan">{{l("TABS OPEN IN CURRENT WINDOW:")}}</b>')
           }
           $('#tabs').append(dumpAllTabsNodes(tabs, query))
         }
