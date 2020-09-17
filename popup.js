@@ -243,7 +243,8 @@ function saveChanges() {
   myList['firstItem'] = tabsValue;
 
   var d = new Date();
-  var creationDate = d.toString();
+  var creationDate = d.toLocaleString('default', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hourCycle: 'h24', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
   myList['createdDate'] = creationDate;
   
   chrome.storage.sync.get(workspaceName, function(data) { // didn't work to include the below here because it is a callback
