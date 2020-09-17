@@ -1,10 +1,12 @@
-README.md
+# WorkSpace Manager
 
-extension to save and retrieve tabs.
+A Chrome Extension to better organize your tabs, save and re-open workspaces
 
-Idea: Save a workspace. All tabs in a current window can be saved as a 'working project'. The tabs can then be retrieved  subsequently (maybe months later), to pull up all relevant tabs.
+## Idea
+Save a workspace. All tabs in a current window can be saved as a 'working project'. The tabs can then be retrieved  subsequently (maybe months later), to pull up all relevant tabs.
 
-Done:
+
+## Done:
 * created hello world extension - popup
 * retrieved all current open tabs and displayed in popup
 * retrieved bookmarks and displayed in popup
@@ -31,8 +33,10 @@ Done:
 * new design/layout/color scheme
 * Easier way to overwrite an existing workspace
 
- 
-* 0.75
+
+## Patch Notes
+
+### 0.75
 * Removed ovewrwrite of workspace. Must go to Show all and delete first
 * Fixed issue of tabs list clearing after saving workspace
 * Search is no longer case-sensitive
@@ -40,43 +44,48 @@ Done:
 * Show created date in show all tabs, if available
 * Add instructions/docs on how to use functionality (specifically deleting Workspaces)
 
-* 0.76
+### 0.76
 * Moved inline scripts to popup.js
 * Updated CSS font-family to include more than Roboto. Includes: Oxygen, Ubuntu, Helvetica Neue, Arial, sans-serif
 * Add favicons
 
-* 0.77
+### 0.77
 * show all workspaces in a starter tab
 
-* 0.80
+### 0.80
 * Removed 'bookmarks' permission
 * Rolled back show all workspace in starter tab
 
-* 0.81
+### 0.81
 * Changed layout to move 'Show All' higher
 
-* 0.83
+### 0.83
 * Improved Delete Dialog UI
 
-* 0.831
+### 0.831
 * Fixed UI alignment issues
 
-* 0.9
+### 0.9
 * Updated UI to use bootstrap
 * Changed show all to be within popup rather than a new tab
 * Fixed Dialog boxes
 * Refeshed look/feel throughout
 * Show all allow for opening workspaces or individual tabs
 
-* 0.903
+### 0.903
 * Added memory of workspace names
 
-* 0.951
+### 0.951
 * added language support, added angular
+
+### 0.96
+* Added support for portuguese language
+* Better identation for some of the files
+* Fix a line with no support of multi-language
 
 imagine a 'delicious' or 'instapaper' like site for your projects.
 
-To Do
+## To Do
 * change search to search extension lists?
 * Create history of workspaces (for how long?)
 * Ability to share a workspace (how?)

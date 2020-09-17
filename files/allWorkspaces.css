@@ -1,31 +1,44 @@
-.showall .top { 
-	font-family: "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif; 
-	font-size: 14px; 
-
-	background-color:white; 
-	color:darkorange; }
+.showall .top {
+    font-family: "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    background-color: white;
+    color: darkorange;
+}
 
 /* unvisited link */
-.showall a:link { color: purple; }
+
+.showall a:link {
+    color: purple;
+}
 
 /* visited link */
-.showall a:visited {  color: darkblue;}
+
+.showall a:visited {
+    color: darkblue;
+}
 
 /* mouse over link */
-.showall a:hover {  color: orange;}
+
+.showall a:hover {
+    color: orange;
+}
 
 /* selected link */
-.showall a:active {  color: blue;}
+
+.showall a:active {
+    color: blue;
+}
 
 .ui-widget {
-	background-color: white;
-	opacity: 1.0px;
+    background-color: white;
+    opacity: 1.0px;
 }
+
 .dialog {
-    display:none;
+    display: none;
     background-color: white;
     opacity: 1.0;
-    color:#4c1862;
+    color: #4c1862;
     width: 50px;
     height: 20px;
     border: 0px solid black;
@@ -33,92 +46,92 @@
 }
 
 .ui-dialog {
-    position:absolute;
-    top:20px;
-	left: 0;
-	border: 1px solid rgba(0,0,0,.3);
-	box-shadow:0px 2px 4px 0px rgba(0,0,0,.1);
-	outline: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .1);
+    outline: 0;
 }
-.ui-dialog .ui-dialog-titlebar {
-	padding: 4px 10px;
-	margin:0px;
-	position: relative;
-	background-color: #4c1862;
-	color: white;
-}
-.ui-dialog .ui-dialog-titlebar-close {
-	position: absolute;
-   background-color:unset;
-    color:white; 
-	font-size:20px;
-	right:5px;
-	top:-2px;
-	border:none;
-}
-.ui-dialog .ui-dialog-buttonpane {
-	text-align: left;
-	border-width: 1px 0 0 0;
-	background-image: none;
-	margin-top: .5em;
-	padding: .3em 1em .5em .4em;
-}
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
-	float: right;
-}
-.ui-dialog .ui-dialog-buttonpane button {
-	margin-right:5px;
-	margin-bottom:5px;
-	cursor: pointer;
-	background-color: #4c1862;
-	color: white;
-	border:1px solid;
-	border-radius:5px;
-	background-color:#4c1862;
 
+.ui-dialog .ui-dialog-titlebar {
+    padding: 4px 10px;
+    margin: 0px;
+    position: relative;
+    background-color: #4c1862;
+    color: white;
 }
+
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    background-color: unset;
+    color: white;
+    font-size: 20px;
+    right: 5px;
+    top: -2px;
+    border: none;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    text-align: left;
+    border-width: 1px 0 0 0;
+    background-image: none;
+    margin-top: .5em;
+    padding: .3em 1em .5em .4em;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #4c1862;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #4c1862;
+}
+
 .ui-draggable .ui-dialog-titlebar {
-	cursor: disabled;
+    cursor: disabled;
 }
 
 .showall .favIcon {
-  padding: 0px 5px 0px 0px;
-  margin: 4px 0px 0px 0px;
-  height:14;
-  width:20;
-  position: relative;
-  vertical-align: middle;
+    padding: 0px 5px 0px 0px;
+    margin: 4px 0px 0px 0px;
+    height: 14;
+    width: 20;
+    position: relative;
+    vertical-align: middle;
 }
 
 .showall .urlLink {
-  padding: 0px 5px 0px 5px;
-  margin: 0px 5px 0px 0px;
-  position: relative;
-  vertical-align: middle;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 0px;
+    position: relative;
+    vertical-align: middle;
 }
 
 .showall ul {
     list-style-type: none;
     padding-inline-start: 15px;
-
 }
 
-
-   ::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
     width: 5px;
-	height:8px;
+    height: 8px;
     background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar-thumb
-{
-    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
     background-color: #999;
 }

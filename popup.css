@@ -1,179 +1,236 @@
-.top { 
-    font-family: "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif; 
-    font-size: 13px; color:black; padding:3px; overflow:scroll;background-color:white 
-
+.top {
+    font-family: "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+    padding: 3px;
+    overflow: scroll;
+    background-color: white
 }
 
 .section_one {
-  /*border:1px solid #C5ACCF; background-color:#4c1862; */
+    /*border:1px solid #C5ACCF; background-color:#4c1862; */
 }
-.table { 
-   margin:0px;
-/*    margin-left: 1px;
+
+.table {
+    margin: 0px;
+    /*    margin-left: 1px;
     margin-top:1px;
     margin-bottom:0px;
-		margin-right: 1px;
+        margin-right: 1px;
     border:0px solid black; color:#4c1862;padding:1px; 
     overflow:hidden;background-color:white */
 }
 
-.table_notopmargin { 
+.table_notopmargin {
     margin-left: 1px;
-    margin-bottom:1px;
+    margin-bottom: 1px;
     margin-right: 1px;
-    border:0px solid black; color:#4c1862;padding:1px; 
+    border: 0px solid black;
+    color: #4c1862;
+    padding: 1px;
     padding-bottom: 10px;
     padding-top: 0px;
-    overflow:hidden;background-color:white 
+    overflow: hidden;
+    background-color: white
 }
 
-.left { float:left; width:45%; margin-left: 5px; }
-.right { float:right; width:45%;  }
-.farright { right:25px; }
-.farleft{ float:left; width:70%; margin-left: 5px; padding-right:5px;}
-.ratings { 
+.left {
+    float: left;
+    width: 45%;
+    margin-left: 5px;
+}
+
+.right {
+    float: right;
+    width: 45%;
+}
+
+.farright {
+    right: 25px;
+}
+
+.farleft {
+    float: left;
+    width: 70%;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+
+.ratings {
     margin-left: 10px;
-		margin-right: 3px; border:0px; padding:3px; overflow:hidden;
+    margin-right: 3px;
+    border: 0px;
+    padding: 3px;
+    overflow: hidden;
 }
 
-.footerleft{ float:left; margin-left: 3px; padding-right:3px; }
-.footerright { margin-left: 3px; width:50%; }
+.footerleft {
+    float: left;
+    margin-left: 3px;
+    padding-right: 3px;
+}
+
+.footerright {
+    margin-left: 3px;
+    width: 50%;
+}
 
 .subtitle {
-  margin-left: 5px;
-  margin-top: 3px;
+    margin-left: 5px;
+    margin-top: 3px;
 }
 
 .subtitle_inline {
     margin-top: 5px;
     margin-left: 5px;
-    height: 20px; 
-    border-radius: 6px;   
-    border:none; 
-    float:left; right:25px;
-    width:70%;
-    padding-right:5px;
+    height: 20px;
+    border-radius: 6px;
+    border: none;
+    float: left;
+    right: 25px;
+    width: 70%;
+    padding-right: 5px;
 }
-
 
 .NoLink {
-  right:25px;
-  margin-left: 50px;
+    right: 25px;
+    margin-left: 50px;
 }
+
 .YesLink {
-    float:left;
+    float: left;
     margin-left: 5px;
 }
 
-.filler { 
+.filler {
     margin-left: 1px;
-  	margin-right: 1px; 
-    border:0px; padding:1px; overflow:hidden;
-    margin-top:2px;
-    background-color:#4c1862;
-    color:white;
+    margin-right: 1px;
+    border: 0px;
+    padding: 1px;
+    overflow: hidden;
+    margin-top: 2px;
+    background-color: #4c1862;
+    color: white;
 }
 
-.footer { 
-    border:0px; padding:3px; overflow:hidden;
+.footer {
+    border: 0px;
+    padding: 3px;
+    overflow: hidden;
     margin-bottom: 5px;
 }
 
-.middle { 
-    margin-left: 1px;
-  	margin-right: 1px;
-    margin-bottom: 1px;
-    padding-top: 1px;
-  	border:0px solid black; color:black; padding:1px;  overflow:hidden;background-color:white 
-}
-
-.listingtitle { 
+.middle {
     margin-left: 1px;
     margin-right: 1px;
-    margin-top:5px;
-    border:none; color:black; padding:3px; overflow:hidden;background-color:white ;
+    margin-bottom: 1px;
+    padding-top: 1px;
+    border: 0px solid black;
+    color: black;
+    padding: 1px;
+    overflow: hidden;
+    background-color: white
+}
+
+.listingtitle {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 5px;
+    border: none;
+    color: black;
+    padding: 3px;
+    overflow: hidden;
+    background-color: white;
     padding-left: 5px;
 }
 
 .button {
     margin-top: 5px;
-    height: 20px; 
-    background-color:#ff930f; 
-    border-radius: 6px;   
-    text-align: center; 
-    color:white; 
-    width:100px;
-    box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
-
+    height: 20px;
+    background-color: #ff930f;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    width: 100px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .widebutton {
     margin-top: 5px;
-    height: 20px; 
-    background-color:#ff930f; 
-    border-radius: 6px;   
-    text-align: center; 
-    color:white; 
-    border:none; 
-    width:100px;
-    right:25px;
-    box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
-
+    height: 20px;
+    background-color: #ff930f;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    border: none;
+    width: 100px;
+    right: 25px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* unvisited link */
-a:link { color: #10052d; }
 
-/* visited link */
-a:visited {  color: #10052d;}
-
-/* mouse over link */
-a:hover {  color: purple;}
-
-/* selected link */
-a:active {  color: blue;}
- 
-.selectdiv select {
-  /*-webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-   Add some styling */
-  
-  display: block;
-  width: 100%;
-  margin: 5px 0px;
+a:link {
+    color: #10052d;
 }
 
-.inputdiv  {
-  /*-webkit-appearance: none;
+/* visited link */
+
+a:visited {
+    color: #10052d;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: purple;
+}
+
+/* selected link */
+
+a:active {
+    color: blue;
+}
+
+.selectdiv select {
+    /*-webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
    Add some styling */
-  
-  display: block;
-  width: 100%;
-  margin: 5px 0px;
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.inputdiv {
+    /*-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+   Add some styling */
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
 }
 
 .favIcon {
-  padding: 0px 0px 0px 0px;
-  margin: 4px 0px 0px 0px;
-  height:14;
-  width:14;
-  position: relative;
-  vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    margin: 4px 0px 0px 0px;
+    height: 14;
+    width: 14;
+    position: relative;
+    vertical-align: middle;
 }
 
 .urlLink {
-  padding: 0px 5px 0px 5px;
-  margin: 0px 5px 0px 0px;
-  position: relative;
-  vertical-align: middle;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 0px;
+    position: relative;
+    vertical-align: middle;
 }
 
 ul {
-  padding-left: 5px;
-  padding-top: 1px;
-  margin-top: 1px;
-  list-style-type: none;
+    padding-left: 5px;
+    padding-top: 1px;
+    margin-top: 1px;
+    list-style-type: none;
 }
