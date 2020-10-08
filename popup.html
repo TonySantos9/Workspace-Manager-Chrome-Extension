@@ -106,16 +106,16 @@
                         <div class="farleft" id='workspaceList'></div>
                     </div>
                     <div class="farright">
-                        <input class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Open')}}" id="open"></div>
+                        <input class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Open')}}" id="open" /></div>
                 </div>
 
 
                 <div class="table">
                     <div class="subtitle"> {{l("Search all Saved Workspaces")}} <br /></div>
                     <div class="selectdiv">
-                        <div class="farleft"><input class="inputdiv form-control" id="search"></div>
+                        <div class="farleft"><input class="inputdiv form-control" id="search" /></div>
                     </div>
-                    <div class="farright"><input class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Search')}}" id="searched"></div>
+                    <div class="farright"><input class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Search')}}" id="searched" /></div>
                 </div>
 
                 <div class="table_notopmargin hidden">
@@ -133,7 +133,7 @@
             <div class="section_one">
                 <div class="filler" style="margin:5px 0px; padding:8px 5px; border-radius:5px;">
                     <div class="subtitle" style="color:white; margin-bottom:3px; margin-top:0px;">{{l("Name the open tabs as a Workspace:")}} <br /></div>
-                    <div class="farleft"><input class="form-control" id="workspace"></div>
+                    <div class="farleft"><input class="form-control" id="workspace" /></div>
                     <div class="farright"><input class="btn btn-warning btn-sm" style="margin-top:-1px;" type="submit" value="{{l('Save')}}" id="save" /> </div>
                 </div>
 
@@ -173,8 +173,14 @@
             <div id="deletedialog2" title="{{l('Delete Workspace?')}}" class="dialog">
                 <p style="padding:5px">{{l("This is not reversible. You will lose all tabs in the selected workspce if you contine. Are you sure you want to delete this workspace?")}}</p>
             </div>
-            <div id='workspaceList2' style="margin-top:20px; font-weight:bold">{{l("LIST OF SAVED WORKSPACES")}} </div>
+
+            <div style="margin: 20px 5px 10px;display: flex;">
+                <div id='workspaceList2' style="font-weight:bold;">{{l("LIST OF SAVED WORKSPACES")}} </div>
+                <input style="position: absolute; right:10px;"class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Delete All')}}" id="deleteall" />
+            </div>
             <div id='playground'></div>
+
+            <input style="position: absolute; right:10px;"class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Delete All')}}" id="deleteall" />
 
         </div>
     </div>

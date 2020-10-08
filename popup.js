@@ -37,6 +37,20 @@ $(function () {
         console.log(workspaceDropDown);
         clickEventShow(workspaceDropDown);
     });
+    
+    // Clears all workspaces
+    $('#deleteall').click(function () {
+        console.log("Delete All WorkSpaces here");
+        chrome.storage.sync.get(null, function (data) {
+            var keys = Object.keys(data);
+            console.log(keys);
+            for (var i = 0; i < keys.length; i++) {
+                chrome.storage.sync.remove(keys[i]);
+            }            
+            // Empty ID playground
+            document.getElementById("playground").innerHTML = "";
+        })
+    });
 });
 
 
