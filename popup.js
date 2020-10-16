@@ -20,7 +20,6 @@ gtag('event', 'conversion', {
 //this only is run once DOM is complete.
 $(function () {
     $('#all').click(function () {
-        console.log('here');
         //chrome.tabs.create({url: './files/allWorkspaces.html'})
         window.location.href = "./files/allWorkspaces.html";
     });
@@ -34,22 +33,44 @@ $(function () {
     });
     $('#open').click(function () { // listener for when 'get' is clicked
         workspaceDropDown = $('#workspaceSelection').val();
-        console.log(workspaceDropDown);
         clickEventShow(workspaceDropDown);
     });
-    
-    // Clears all workspaces
-    $('#deleteall').click(function () {
+
+    // Clears all workspaces by pressing Delete All button
+    $('#deleteallbtn').click(function () {
         console.log("Delete All WorkSpaces here");
         chrome.storage.sync.get(null, function (data) {
+            // Saved WorkSpaces
             var keys = Object.keys(data);
-            console.log(keys);
-            for (var i = 0; i < keys.length; i++) {
-                chrome.storage.sync.remove(keys[i]);
-            }            
-            // Empty ID playground
-            document.getElementById("playground").innerHTML = "";
-        })
+            if (keys.length != 0) {
+                $('<div style="padding:10px;" class="lan" title="\{\{l\(\'WARNING!\'\)\}\}" />').html("{{l('Workspace already exists. Do you want to overwrite it? This is NOT reversible')}}").dialog({
+                    autoOpen: false,
+                    resizable: false,
+                    draggable: false,
+                    position: { my: "center top", at: "center top+50", of: window },
+                    modal: true,
+                    overlay: {
+                        backgroundColor: 'white',
+                        opacity: 1.0
+                    },
+                    closeText: '&times;',
+                    buttons: {
+                        '{{l("Yes, Confirm!")}}': function () {
+                            for (var i = 0; i < keys.length; i++) {
+                                chrome.storage.sync.remove(keys[i]);
+                            }
+
+                            // Empty ID playground, after saying Yes
+                            document.getElementById("playground").innerHTML = "";
+                            $(this).dialog('destroy');
+                        },
+                        '{{l("Cancel")}}': function () {
+                            $(this).dialog('destroy');
+                        }
+                    }
+                }).dialog('open');
+            }
+        });
     });
 });
 

@@ -174,16 +174,14 @@
                 <p style="padding:5px">{{l("This is not reversible. You will lose all tabs in the selected workspce if you contine. Are you sure you want to delete this workspace?")}}</p>
             </div>
 
-            <div style="margin: 20px 5px 10px;display: flex;">
-                <div id='workspaceList2' style="font-weight:bold;">{{l("LIST OF SAVED WORKSPACES")}} </div>
-                <input style="position: absolute; right:10px;"class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Delete All')}}" id="deleteall" />
-            </div>
+            <div id='workspaceList2' style="margin-top:20px; font-weight:bold">{{l("LIST OF SAVED WORKSPACES")}} </div>
             <div id='playground'></div>
 
-            <input style="position: absolute; right:10px;"class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Delete All')}}" id="deleteall" />
+            <input id="deleteallbtn" class="btn btn-outline-warning btn-sm" type="submit" value="{{l('Delete All')}}" />
 
         </div>
     </div>
+
 </body>
 
 </html>
